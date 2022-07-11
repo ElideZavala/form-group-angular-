@@ -58,6 +58,14 @@ export class FormgroupComponent implements OnInit {
     return this.form.get('email')
   }
 
+  get emailFieldIsValid() {
+    return this.emailField.touched && this.emailField.valid;
+  }
+
+  get emailFieldIsInvalid() {
+    return this.emailField.touched && this.emailField.invalid;
+  }
+
   doSomething() {
     console.log('doSomething');
   }
