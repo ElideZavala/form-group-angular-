@@ -41,6 +41,19 @@ export class FormgroupComponent implements OnInit {
     // })
   };
 
+  // private buidForm() {
+  //   this.form = this.formBuider.group({
+  //     age: [0, Validators.min(18)], // Validamos que la edad minima debe de ser 18.
+  //     price: [0, Validators.compose([Validators.min(500), Validators.max(3000)])],
+  //     prices: [0, [Validators.min(500), Validators.max(3000)]],
+  //     name: ['', Validators.required], // Indicamos que el nombre sera requerido.
+  //     terms: [false, Validators.requiredTrue], // Indicamos que el campo terms sera requerido.
+  //     email: ['', [Validators.required, Validators.email]], // Requerido y debe ser email.
+  //     text: ['', Validators.pattern(/([a-zA-Z])\w+/)],
+  //     text2: ['', [Validators.pattern(/([a-zA-Z])\w+/), Validators.minLength(5), Validators.maxLength(80)]], // Validamos expresiones regulares y longitud minima y maxima.
+  //   });
+  // }
+
   save(event: Event) {
     event.preventDefault();
     console.log('save')
